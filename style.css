@@ -1,0 +1,53 @@
+body{
+    width: 99%;
+    margin: 0;
+    padding: 0;
+    background: bisque;
+    color: black;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    width: 300px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a{
+    text-decoration: none;
+    padding-inline: 20px;
+    color: black;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 80vh;
+    font-size: 2em;
+}
+
+button{
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    font-size: .75em;
+    border: 2px solid black;
+    border-radius: 25px;
+    box-shadow: black;
+}
