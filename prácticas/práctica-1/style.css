@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: cornsilk;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+     margin-bottom: 60px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 40px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 2em;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero a{
+    text-decoration: none;
+    font-size: 2em;
+    padding: 20px;
+    background-color: blue;
+    border: 2px solid black;
+    border-radius: 25px;
+    color: white;
+}
+
+.about{
+    padding-block-start: 40px;
+    padding-inline-start: 40px;
+}
+
+.about p{
+    width: 80ch;
+    line-height: 1.2;
+}
+
+.products{
+   padding-block-start: 40px;
+    padding-inline: 40px; 
+}
+
+
+.products article{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.compare{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-block-start: 40px;
+    padding-inline: 40px; 
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: fixed;
+}
+th, td{
+    padding: 1em;
+    border: 2px solid black;
+}
+
+.products-help{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block-start: 40px;
+    padding-inline: 40px;
+}
+
+.products-help ol li{
+    padding-block: 16px;
+}
+
+.help-list{
+    width: 350px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 25px;
+}
