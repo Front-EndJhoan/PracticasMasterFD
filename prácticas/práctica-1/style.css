@@ -1,3 +1,7 @@
+:roo{
+    --section-spacing: 4rem;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -9,8 +13,9 @@ html{
     font-size: clamp(14px, 1.2vw, 18px);
 }
 
-section{
-     margin-bottom: 60px;
+section:not(.hero){
+    margin-top: var(--section-spacing);
+
 }
 
 nav{
@@ -37,6 +42,7 @@ nav ul a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 80vh;
 }
 
 .hero a{
@@ -49,92 +55,55 @@ nav ul a{
     color: white;
 }
 
-.about{
-    padding-block-start: 40px;
-    padding-inline-start: 40px;
-}
-
-.about p{
-    width: 80ch;
-    line-height: 1.2;
-}
-
-.products{
-   padding-block-start: 40px;
-    padding-inline: 40px; 
-}
-
-
-.products article{
-    background-color: white;
+.block-1{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.block-1 p{
+    max-width: 80ch;
+    line-height: 1.5;
+}
 
-.compare{
+.block-1 article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 25px;
+    gap: 2em;
+}
+
+.block-2{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-block-start: 40px;
-    padding-inline: 40px; 
+    align-items: center;
+    gap: 2em;
 }
 
-table{
-    width: 100%;
+.block-2 table{
+    width: 80%;
     border-collapse: collapse;
-    text-align: center;
     table-layout: fixed;
 }
-th, td{
-    padding: 1em;
+
+tr, th, td{
     border: 2px solid black;
-}
-
-.products-help{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 5px;
     align-items: center;
-    padding-block-start: 40px;
-    padding-inline: 40px;
-}
-
-.products-help ol li{
-    padding-block: 16px;
 }
 
 .help-list{
-    width: 350px;
     background-color: white;
     border: 2px solid black;
     border-radius: 25px;
-}
-
-.form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-    max-height: 300px;
-    aspect-ratio: 1;
-    border-radius: 10px;
-    padding-inline: 60px;
-}
-
-.form input{
-    margin-block-end: 15px;
-}
-
-fieldset button{
-    height: 30px;
-    background-color: blue;
-    color: white;
-    border: 2px solid;
-    border-radius: 25px;
-    cursor: pointer;
+    padding-block: 30px;
+    padding-inline: 30px;
 }
 
 .contact{
@@ -142,6 +111,39 @@ fieldset button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-block-start: 40px;
-    padding-inline: 40px;
 }
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    aspect-ratio: 1;
+    padding: 0;
+    gap: 2em;
+}
+
+.form input{
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.form button{
+    width: 80%;
+    height: 60px;
+    color: white;
+    background-color: blue;
+    border: 2px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.form label{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: .75em;
+}
+
